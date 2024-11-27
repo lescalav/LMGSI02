@@ -1,0 +1,112 @@
+<!--******************************************************************************************************************
+ * 
+ * Nombre: Lourdes Lorena Escala Vignolo
+ * Fecha: 26/11/2024 
+ * Modulo: LMSGI. 
+ * UD: UD02 Desarrollo web con HTML5 y CSS3.
+ * Tarea: Tarea Evaluación 02. Sitio web.
+ * 
+ * Descripción: Desarrollar un sitio web de cinco páginas con información sobre un tema libre
+ * Enlace autoevaluación: https://www.youtube.com/watch?v=m28eG4zscY0
+ * Enlace a la web publicada: https://lescalav.github.io/LMGSI02/
+ * Enlace al repositorio: https://github.com/lescalav/LMGSI02
+ *
+ *******************************************************************************************************************/-->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sitio web del Festival Internacional de Cine Lima Alterna">
+    <meta name="keywords" content="LAIFF, FICLA">
+    <!-- Enlace a la hoja de estilos de normalización -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Importar fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <!-- Cabecero -->
+    <header>
+        <img src="img/index/laiff-logo-rojo.png" alt="Logotipo del Festival Internacional de Cine Lima Alterna">
+        <p>Del 10 al 20 <br> de octubre <br> de 2024</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="html/noticias.html">NOTICIAS</a></li>
+            <li id="categoriasmenu"><a href="index.html#categorias">CATEGORÍAS</a>
+                <!-- Opcion desplegable -->
+                <ul class="desplegable">
+                    <li><a href="html/nacional.html">NACIONAL</a>
+                    <li><a href="#">INTERNACIONAL</a>
+                    <li><a href="#">INSIGNIAS</a>
+                </ul>
+            </li>
+            <li><a href="html/formulario.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Descripción del sitio web -->
+    <main class="presentacionLAIFF">
+        <p> Desde el 2020, el Festival Internacional de Cine Lima Alterna es un espacio peruano para la exhibición y
+            difusión de lo mejor del cine independiente internacional. Con una variada programación tanto estilística
+            como geográfica, Lima Alterna apuesta por la difusión de películas, en su mayoría, con narrativas alternas a
+            las convencionales, con modos de producción alternativos, y que proponen nuevas formas, narrativas e
+            innovación visual tanto en la ficción, como documental e híbridos, así como propuestas ligadas al videoarte
+            y la experimentación cinematográfica de jóvenes cineastas y maestros contemporáneos.</p>
+    </main>
+
+     <!-- Sección de categorías -->
+     <section id="categorias">
+        <a href="html/nacional.html">
+        <article class="categoria">
+            <img src="img/index/nacional.jpg">
+            <h3>Nacional</h3>
+        </article>
+        </a>
+        <a href="#">
+        <article class="categoria">
+            <img src="img/index/internacional.jpg">
+            <h3>Internacional</h3>
+        </article>
+        </a>
+        <a href="#">
+        <article class="categoria">
+            <img src="img/index/insignias.jpg">
+            <h3>Insignias</h3>
+        </article>
+        </a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Datos de autoría y contacto -->
+        <article class="datos-footer">
+        <p>Lima Alterna Festival Internacional de cine</p>
+        <p>info@limaalterna.pe</p>
+        <p>© 2024 | Lorena Escala Vignolo</p>
+        </article>
+        <!-- Enlaces a redes sociales -->
+        <article class="iconos-footer">
+            <a href="https://www.facebook.com/limaalternaiff/?locale=es_LA" target="_blank"><img src="img/rrss/icons8-facebook-50.png"></a>
+            <a href="https://www.instagram.com/limaalternaiff/?hl=es" target="_blank"><img src="img/rrss/icons8-instagram-50.png"></a>
+            <a href="https://x.com/limaalternaiff" target="_blank"><img src="img/rrss/icons8-twitterx-50.png"></a>
+            <a href="https://www.youtube.com/@limaalternaiff" target="_blank"><img src="img/rrss/icons8-youtube-50.png"></a>
+        </article>
+    </footer>
+
+</body>
+
+</html>
